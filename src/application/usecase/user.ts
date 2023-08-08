@@ -1,12 +1,12 @@
 import { inject, singleton } from "tsyringe";
 import type { IUserRepository } from "@/domain/repository/user";
-import { UserPersistence } from "@/infrastructure/persistence/user";
+import { UserRepository } from "@/infrastructure/persistence/user";
 import { User } from "@/domain/entity/user";
 
 @singleton()
 export class UserUseCase {
   constructor(
-    @inject(UserPersistence)
+    @inject(UserRepository)
     private readonly userRepository: IUserRepository
   ) {}
 
