@@ -1,5 +1,5 @@
 import { inject, singleton } from "tsyringe";
-import type { IUserRepository } from "@/domain/repository/user";
+import type { IUserRepository } from "@/interface/repository/user";
 import { UserRepository } from "@/repository/user";
 import { User } from "@/domain/entity/user";
 
