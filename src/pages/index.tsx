@@ -6,7 +6,7 @@ import { container } from "tsyringe";
 import { PetUseCase } from "@/application/usecase/pet";
 import { Pet } from "@/domain/inventory/pet";
 
-import Home, { HomeProps } from "./presentational";
+import Home, { HomeProps } from "@/component/template/home";
 
 const useHomeProps = (): HomeProps => {
   const [pets, setPets] = useState<Pet[]>([]);
